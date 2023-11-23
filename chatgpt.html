@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<title>From Eliza to ChatGPT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="color.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" style="z-index:3;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+  <a class="w3-bar-item w3-button" href="group.html">Home</a>
+  <a class="w3-bar-item w3-button" href="Eliza.html">ELiza</a>
+  <a class="w3-bar-item w3-button" href="PARRY.html">PARRY</a>
+  <a class="w3-bar-item w3-button" href="alice.html">A.L.I.C.E.</a>
+  <a class="w3-bar-item w3-button" href="smarter.html">SmarterChild</a>
+  <a class="w3-bar-item w3-button" href="siri.html">Siri</a>
+  <a class="w3-bar-item w3-button" href="google.html">Google Assistant</a>
+  <a class="w3-bar-item w3-button w3-theme-light" href="chatgpt.html">ChatGPT</a>
+ 
+  </div>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+  <div id="myTop" class="w3-container w3-top w3-theme w3-large container" style="background-size: cover;">
+    <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+    <span id="myIntro" class="w3-hide">ChatGPT</span></p>
+  </div>
+  
+  <header class="w3-container w3-theme container" style="padding:64px 32px; background-image: url('back1.jpg'); background-size: cover; background-position: center;">
+  <h1 class="w3-xxxlarge">ChatGPT</h1>
+</header>
+
+
+<div class="w3-container" style="padding: 20px 32px 32px;">
+  <hr>
+  <h1><strong>INTRODUCTION</strong></h1>
+  <h4><p><strong>ChatGPT (Chat Generative Pre-trained Transformer)</strong> is a large language model-based chatbot developed by OpenAI and launched on November 30, 2022, that enables users to refine and steer a conversation towards a desired length, format, style, level of detail, and language. Successive prompts and replies, known as prompt engineering, are considered at each conversation stage as a context.</p></h4>
+  <h4><p>ChatGPT is built upon either GPT-3.5 or GPT-4-members of OpenAI's proprietary series of generative pre-trained transformer (GPT) models, based on the transformer architecture developed by Google - and is fine-tuned for conversational applications using a combination of supervised and reinforcement learning techniques. ChatGPT was released as a freely available research preview, but due to its popularity, OpenAI now operates the service on a freemium model. It allows users on its free tier to access the GPT-3.5-based version. In contrast, the more advanced GPT-4-based version and priority access to newer features are provided to paid subscribers under the commercial name "ChatGPT Plus".</p></h4>
+  <h4><p>By January 2023, it had become what was then the fastest-growing consumer software application in history, gaining over 100 million users and contributing to OpenAI's valuation growing to $29 billion. ChatGPT's release spurred the development of competing products, including Bard, Ernie Bot, LLaMA, Claude, and Grok. Microsoft launched its Bing Chat based on OpenAI's GPT-4. It raised concern among some observers over the potential of ChatGPT and similar programs to displace or atrophy human intelligence, enable plagiarism, or fuel misinformation.</p></h4>
+  <hr>
+  <h4><p><strong>Unlike most chatbots, ChatGPT remembers a limited number of previous prompts in the same conversation. Journalists have speculated that this will allow ChatGPT to be used as a personalized therapist.</strong></p></h4>
+  <iframe width="778.5" height="438" src="https://www.youtube.com/embed/3ao7Z8duDXc" title="Chat GPT Explained in 5 Minutes | What Is Chat GPT ? | Introduction To Chat GPT | Simplilearn" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<br>
+<br>
+
+  <div class="w3-container w3-padding-16 w3-card" style="background-color:#eee">
+  <h2><strong>Funny Conversations With ChatGPT &#128514;</strong></h2>
+  <iframe width="778.5" height="438" src="https://www.youtube.com/embed/R9qIEXcYGv4" title="The Funniest ChatGPT Conversations" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+  <br>
+  <hr>
+  
+  <h4><p>For further information, click <a href="https://openai.com/chatgpt" style="color:blue">here</a> to go to OpenAI's official website.</a></p></h4>
+
+</div>
+</div>
+</body>
+
+
+<footer class="w3-container w3-theme w3-footer" style="padding:32px">
+</footer>
+     
+
+
+     
+</div>
+
+
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+// Accordions
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme", "");
+  }
+}
+
+
+</script>
+     
+</body>
+</html> 
+
+

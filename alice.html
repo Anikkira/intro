@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<title>From Eliza to ChatGPT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="color.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" style="z-index:2;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+  <a class="w3-bar-item w3-button" href="group.html">Home</a>
+  <a class="w3-bar-item w3-button" href="Eliza.html">ELiza</a>
+  <a class="w3-bar-item w3-button" href="PARRY.html">PARRY</a>
+  <a class="w3-bar-item w3-button w3-theme-light" href="alice.html">A.L.I.C.E.</a>
+  <a class="w3-bar-item w3-button" href="smarter.html">SmarterChild</a>
+  <a class="w3-bar-item w3-button" href="siri.html">Siri</a>
+  <a class="w3-bar-item w3-button" href="google.html">Google Assistant</a>
+  <a class="w3-bar-item w3-button" href="chatgpt.html">ChatGPT</a>
+ 
+  </div>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+  <div id="myTop" class="w3-container w3-top w3-theme w3-large container" style="background-size: cover;">
+    <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+    <span id="myIntro" class="w3-hide">A.L.I.C.E</span></p>
+  </div>
+  
+  <header class="w3-container w3-theme container" style="padding:64px 32px; background-image: url('back1.jpg'); background-size: cover; background-position: center;">
+  <h1 class="w3-xxxlarge">A.L.I.C.E</h1>
+</header>
+
+
+<div class="w3-container" style="padding: 20px 32px 32px; ">
+    <hr>
+    <h1><strong>INTRODUCTION</strong></h1>
+    <h4><p><strong>A.L.I.C.E. (Artificial Linguistic Internet Computer Entity)</strong>, also referred to as Alicebot, or simply Alice, is a natural language processing chatterbot &ndash; a program that engages in a conversation with a human by applying some heuristical pattern matching rules to the human's input. It was inspired by Joseph Weizenbaum's classical ELIZA program.</p></h4>
+    <h4><p>It is one of the strongest programs of its type and has won the Loebner Prize, awarded to accomplished humanoid, talking robots, three times (in 2000, 2001, and 2004). The program is unable to pass the Turing test, as even the casual user will often expose its mechanistic aspects in short conversations. </p></h4>
+    <h4><p>Alice was originally composed by Richard Wallace; it "came to life" on November 23, 1995. The program was rewritten in Java beginning in 1998. The current incarnation of the Java implementation is Program D. The program uses an XML Schema called AIML (Artificial Intelligence Markup Language) for specifying the heuristic conversation rules.</p></h4>
+
+
+<div class="w3-container w3-padding-16 w3-card w3-leftbar" style="background-color:#eee; width:500px; height: auto;">
+    <h3>Click <a href="http://www.mfellmann.net/content/alice.html" style="color:blue">here</a> to chat with A.L.I.C.E!</h3>
+    <img src="Alice.png" style="height: 250px; width: auto">
+  </div>
+<hr>
+<div>
+<h1><strong>An Anecdote about A.L.I.C.E</strong></h1>
+<h4><p>Spike Jonze has cited ALICE as the inspiration for his academy award-winning film <i>Her</i>, in which a human falls in love with a chatbot. 
+  <br>In a New Yorker article titled "Can Humans Fall in Love with Bots?" Jonze said "that the idea originated from a program he tried about a decade ago called the ALICE bot, which engages in friendly conversation." The LATimes reported:</p></h4>
+<div class="w3-container w3-sand w3-leftbar" style=" width: 850px; height: auto;">
+  <p>Though the film&acute;s premise evokes comparisons to Siri, Jonze said he actually had the idea well before the Apple digital assistant came along, after using a program called Alicebot about ten years ago. As geek nostalgists will recall, that intriguing if at times crude software (it flunked the industry-standard Turing Test) would attempt to engage users in everyday chatter based on a database of prior conversations. Jonze liked it, and decided to apply a film genre to it. "I thought about that idea, and what if you had a real relationship with it?"Jonze told reporters. "And I used that as a way to write a relationship movie and a love story."</p>
+
+<div class="image-container">
+  <img src="her.JPG" style="width: auto; height: 300px;" >
+  <p><strong>The movie <i>Her</i></strong>
+  </p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</body>
+<br>
+
+
+
+
+<footer class="w3-container w3-theme w3-footer" style="padding:32px">
+</footer>
+     
+
+    <script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+// Accordions
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme", "");
+  }
+}
+
+
+</script>
+     
+</body>
+</html> 

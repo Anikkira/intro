@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<title>From Eliza to ChatGPT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="color.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" style="z-index:3;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+  <a class="w3-bar-item w3-button" href="group.html">Home</a>
+  <a class="w3-bar-item w3-button w3-theme-light" href="Eliza.html">ELiza</a>
+  <a class="w3-bar-item w3-button" href="PARRY.html">PARRY</a>
+  <a class="w3-bar-item w3-button" href="alice.html">A.L.I.C.E.</a>
+  <a class="w3-bar-item w3-button" href="smarter.html">SmarterChild</a>
+  <a class="w3-bar-item w3-button" href="siri.html">Siri</a>
+  <a class="w3-bar-item w3-button" href="google.html">Google Assistant</a>
+  <a class="w3-bar-item w3-button" href="chatgpt.html">ChatGPT</a>
+ 
+  </div>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+  <div id="myTop" class="w3-container w3-top w3-theme w3-large container" style="background-size: cover;">
+    <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+    <span id="myIntro" class="w3-hide">ELIZA</span></p>
+  </div>
+  
+  <header class="w3-container w3-theme container" style="padding:64px 32px; background-image: url('back1.jpg'); background-size: cover; background-position: center;">
+  <h1 class="w3-xxxlarge">ELIZA</h1>
+</header>
+
+
+<div class="w3-container" style="padding: 20px 32px 32px;">
+    <hr>
+    <h1><strong>INTRODUCTION</strong></h1>
+    <h4><p><strong>ELIZA is an early natural language processing computer program created from 1964 to 1967 at MIT by Joseph Weizenbaum. </strong>Created to explore communication between humans and machines, ELIZA simulated conversation by using a pattern matching and substitution methodology that gave users an illusion of understanding on the part of the program, but had no representation that could be considered really understanding what was being said by either party. Whereas the ELIZA program itself was written (originally) in MAD-SLIP, the pattern matching directives that contained most of its language capability were provided in separate "scripts", represented in a lisp-like representation. The most famous script, DOCTOR, simulated a psychotherapist of the Rogerian school (in which the therapist often reflects back the patient's words to the patient), and used rules, dictated in the script, to respond with non-directional questions to user inputs. As such, ELIZA was one of the first chatterbots ("chatbot" modernly) and one of the first programs capable of attempting the Turing test.</p></h4>
+    <div class="w3-container w3-sand w3-rightbar">
+    <div style="float: right; margin-left: 5px;">   
+        <img src="Video_Game_Museum_in_Berlin_(44129332940).jpg" style="width: auto; height: 400px;">
+    </div>
+    <div class="image-container">
+        <p>Joseph Weizenbaum's ELIZA, running the DOCTOR script, created a conversational interaction somewhat similar to what might take place in the office of "a [non-directive] psychotherapist in an initial psychiatric interview" and to "demonstrate that the communication between man and machine was superficial". While ELIZA is best known for acting in the manner of a psychotherapist, the speech patterns are due to the data and instructions supplied by the DOCTOR script. ELIZA itself examined the text for keywords, applied values to said keywords, and transformed the input into an output; the script that ELIZA ran determined the keywords, set the values of keywords, and set the rules of transformation for the output. Weizenbaum chose to make the DOCTOR script in the context of psychotherapy to "sidestep the problem of giving the program a data base of real-world knowledge", allowing it to reflect back the patient's statements in order to carry the conversation forward. The result was a somewhat intelligent-seeming response that reportedly deceived some early users of the program.<br><br>The picture on the right demonstrates a conversation between a human and ELIZA's DOCTOR script</p>
+    </div>
+    
+    </div>
+    <br>
+    <iframe width="519" height="292" src="https://www.youtube.com/embed/8jGpkdPO-1Y" title="The First Ever AI Chatbot: ELIZA (1966)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+    <br>
+    <hr>
+    <h2><strong>The ELIZA Effect </strong></h2>
+    <div class="w3-container w3-sand w3-leftbar">
+    <p>" Well, my boyfriend made me come here.<br>
+        ELIZA: Your boyfriend made you come here?<br>
+        Human: He says I'm depressed much of the time.<br>
+        ELIZA: I am sorry to hear you are depressed.<br>
+        Human: It's true. I'm unhappy.<br>
+        ELIZA: Do you think coming here will help you not to be unhappy? "</p>
+    </div>
+    
+    <h4><p>When executing Weizenbaum's DOCTOR script, ELIZA simulated a Rogerian psychotherapist, largely by rephrasing the "patient"'s replies as questions.</p></h3>
+        <p>Though designed strictly as a mechanism to support "natural language conversation" with a computer, ELIZA's DOCTOR script was found to be surprisingly successful in eliciting emotional responses from users who, in the course of interacting with the program, began to ascribe understanding and motivation to the program's output. As Weizenbaum later wrote, "I had not realized ... that extremely short exposures to a relatively simple computer program could induce powerful delusional thinking in quite normal people." Indeed, ELIZA's code had not been designed to evoke this reaction in the first place. Upon observation, researchers discovered users unconsciously assuming ELIZA's questions implied interest and emotional involvement in the topics discussed, even when they consciously knew that ELIZA did not simulate emotion.</p>
+        <p>Although the effect was first named in the 1960s, the tendency to understand mechanical operations in psychological terms was noted by Charles Babbage. In proposing what would later be called a carry-lookahead adder, Babbage remarked that he found such terms convenient for descriptive purposes, even though nothing more than mechanical action was meant.</p></h4>
+
+    <br>
+    <iframe width="519" height="292" src="https://www.youtube.com/embed/s-ASKmwgWM0" title="The Eliza Effect - Do Robots Have Feelings?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+</div>
+</body>
+
+    <footer class="w3-container w3-theme w3-footer" style="padding: 42px;">
+    </footer>
+         
+    </div>
+    
+    <script>
+    // Open and close the sidebar on medium and small screens
+    function w3_open() {
+      document.getElementById("mySidebar").style.display = "block";
+      document.getElementById("myOverlay").style.display = "block";
+    }
+    
+    function w3_close() {
+      document.getElementById("mySidebar").style.display = "none";
+      document.getElementById("myOverlay").style.display = "none";
+    }
+    
+    // Change style of top container on scroll
+    window.onscroll = function() {myFunction()};
+    function myFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+        document.getElementById("myIntro").classList.add("w3-show-inline-block");
+      } else {
+        document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+        document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+      }
+    }
+    
+    // Accordions
+    function myAccordion(id) {
+      var x = document.getElementById(id);
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme";
+      } else { 
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-theme", "");
+      }
+    }
+    
+    
+    </script>
+         
+    </body>
+    </html> 
+    
+    

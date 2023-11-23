@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<title>From Eliza to ChatGPT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="color.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" style="z-index:3;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+  <a class="w3-bar-item w3-button" href="group.html">Home</a>
+  <a class="w3-bar-item w3-button" href="Eliza.html">ELiza</a>
+  <a class="w3-bar-item w3-button" href="PARRY.html">PARRY</a>
+  <a class="w3-bar-item w3-button" href="alice.html">A.L.I.C.E.</a>
+  <a class="w3-bar-item w3-button" href="smarter.html">SmarterChild</a>
+  <a class="w3-bar-item w3-button" href="siri.html">Siri</a>
+  <a class="w3-bar-item w3-button w3-theme-light" href="google.html">Google Assistant</a>
+  <a class="w3-bar-item w3-button" href="chatgpt.html">ChatGPT</a>
+ 
+  </div>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+  <div id="myTop" class="w3-container w3-top w3-theme w3-large container" style="background-size: cover;">
+    <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+    <span id="myIntro" class="w3-hide">Google Assistant</span></p>
+  </div>
+  
+  <header class="w3-container w3-theme container" style="padding:64px 32px; background-image: url('back1.jpg'); background-size: cover; background-position: center;">
+  <h1 class="w3-xxxlarge">Google Assistant</h1>
+</header>
+
+
+<div class="w3-container" style="padding: 20px 32px 32px;">
+  <hr>
+  <h1><strong>INTRODUCTION</strong></h1>
+  <h4><p><strong>The Google Assistant </strong> is a virtual assistant software application developed by Google that is primarily available on mobile and home automation devices. Based on artificial intelligence, The Google Assistant can engage in two-way conversations.</p></h4>
+  <h4><p>The Google Assistant debuted in May 2016 as part of Google's messaging app Allo, and its voice-activated speaker Google Nest. After a period of exclusivity on the Google Pixel smartphones, it was deployed on other Android devices starting in February 2017, including third-party smartphones and Android Wear (now Wear OS), and was released as a standalone app on the iOS operating system in May 2017. Alongside the announcement of a software development kit in April 2017, Assistant has been further extended to support a large variety of devices, including cars and third-party smart home appliances. The functionality of the Assistant can also be enhanced by third-party developers.</p></h4>
+  <img src="google-assistant-xi-lie-358927.jpg.webp" style="height:auto;width:850px">
+  <br>
+  <br>
+  <iframe width="1038" height="584" src="https://www.youtube.com/embed/FPfQMVf4vwQ" title="Meet your Google Assistant, your own personal Google" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <hr>
+
+  <h4><p>For further information, click <a href="https://assistant.google.com" style="color:blue">here</a> to go to Google's official website.</a></p></h4>
+
+</div>
+</div>
+</body>
+
+
+<footer class="w3-container w3-theme w3-footer" style="padding:32px">
+</footer>
+     
+
+
+     
+</div>
+
+
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+// Accordions
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme", "");
+  }
+}
+
+
+</script>
+     
+</body>
+</html> 
+
+
+

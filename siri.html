@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<title>From Eliza to ChatGPT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="color.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" style="z-index:3;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+  <a class="w3-bar-item w3-button" href="group.html">Home</a>
+  <a class="w3-bar-item w3-button" href="Eliza.html">ELiza</a>
+  <a class="w3-bar-item w3-button" href="PARRY.html">PARRY</a>
+  <a class="w3-bar-item w3-button" href="alice.html">A.L.I.C.E.</a>
+  <a class="w3-bar-item w3-button" href="smarter.html">SmarterChild</a>
+  <a class="w3-bar-item w3-button w3-theme-light" href="siri.html">Siri</a>
+  <a class="w3-bar-item w3-button" href="google.html">Google Assistant</a>
+  <a class="w3-bar-item w3-button" href="chatgpt.html">ChatGPT</a>
+ 
+  </div>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+  <div id="myTop" class="w3-container w3-top w3-theme w3-large container" style="background-size: cover;">
+    <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+    <span id="myIntro" class="w3-hide">Siri</span></p>
+  </div>
+  
+  <header class="w3-container w3-theme container" style="padding:64px 32px; background-image: url('back1.jpg'); background-size: cover; background-position: center;">
+  <h1 class="w3-xxxlarge">Siri</h1>
+</header>
+
+
+<div class="w3-container" style="padding: 20px 32px 32px; ">
+  <hr>
+  <h1><strong>INTRODUCTION</strong></h1>
+  <h4><p><strong>Siri</strong> is the <strong>digital assistant</strong> that is part of Apple Inc.&acute;s iOS, iPadOS, watchOS, macOS, tvOS, audioOS, and visionOS operating systems. It uses voice queries, gesture based control, focus-tracking and a natural-language user interface to answer questions, make recommendations, and perform actions by delegating requests to a set of Internet services. With continued use, it adapts to users&acute; individual language usages, searches, and preferences, returning individualized results.</p></h4>
+  <hr>
+  <h1><strong>What Is a Digital Assistant?</strong></h1>
+  <iframe width="1022" height="575" src="https://www.youtube.com/embed/dqmJRScuZnE" title="What is a digital assistant?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <hr>
+  <h1><strong>What&acute;s the Difference Between a Digital Assistant and a Chatbot?  </strong></h1>
+  <div class="w3-container w3-sand w3-leftbar">
+    <h4><p><strong>Chatbots</strong> are computer programs that simulate and process written or spoken human conversation so that people can interact with digital devices as if they were communicating with a real person. If you speak into your phone to order your favorite coffee drink, you are interacting with a chatbot. You can also request a ride from a ridesharing service by using one of the service&acute;s chatbots. These are relatively simple "conversations."</p>
+      <p><strong>A digital assistant</strong> is an advanced type of chatbot that can handle more complex interactions in a conversational way. A digital assistant, for example, can respond to a complex request such as, "Schedule a flight to Phoenix for me next Sunday using my usual seating preferences, and arrange transportation to and from the airport." To respond to this request, the digital assistant will need to access multiple sources - a capacity that the ordinary chatbot does not possess.</p>
+    </h4>
+  </div>
+  <br>
+  <img src="apple-siri-copertina.jpg" style="height: auto; width: 600px;">
+  <br>
+  <hr>
+  <h4><p>As of now, Siri can understand and respond in<strong> more than 20 languages</strong>, making it a truly global assistant. Some of the languages Siri supports include English, Spanish, French, German, Italian, Mandarin Chinese, Japanese, Korean, Russian, and Arabic, among others.</p></h4>
+  <div>
+    <img id="play-icon" src="icon.png" style="height: 75px;width: auto;"><strong>Click the "play" icon to hear the voice of Siri!</strong>
+  </div>
+  
+  <audio id="audio-player">
+    <source src="sirivoice.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    var audio = document.getElementById("audio-player");
+    var playIcon = document.getElementById("play-icon");
+    
+    playIcon.addEventListener("click", function() {
+      audio.play();
+    });
+  </script>
+  <hr>
+  <h4><p>For further information, click <a href="https://www.apple.com/hk/siri/" style="color:blue">here</a> to go to Apple's official website.</a></p></h4>
+  
+
+</div>
+
+</div>
+</body>
+<footer class="w3-container w3-theme w3-footer" style="padding:32px">
+</footer>
+     
+
+
+     
+</div>
+
+
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+// Accordions
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme", "");
+  }
+}
+
+
+</script>
+     
+</body>
+</html> 
+

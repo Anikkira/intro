@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<title>From Eliza to ChatGPT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="color.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" style="z-index:2;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+  <a class="w3-bar-item w3-button" href="group.html">Home</a>
+  <a class="w3-bar-item w3-button" href="Eliza.html">ELiza</a>
+  <a class="w3-bar-item w3-button" href="PARRY.html">PARRY</a>
+  <a class="w3-bar-item w3-button" href="alice.html">A.L.I.C.E.</a>
+  <a class="w3-bar-item w3-button w3-theme-light" href="smarter.html">SmarterChild</a>
+  <a class="w3-bar-item w3-button" href="siri.html">Siri</a>
+  <a class="w3-bar-item w3-button" href="google.html">Google Assistant</a>
+  <a class="w3-bar-item w3-button" href="chatgpt.html">ChatGPT</a>
+ 
+  </div>
+</nav>
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+  <div id="myTop" class="w3-container w3-top w3-theme w3-large container" style="background-size: cover;">
+    <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+    <span id="myIntro" class="w3-hide">SmarterChild</span></p>
+  </div>
+  
+  <header class="w3-container w3-theme container" style="padding:64px 32px; background-image: url('back1.jpg'); background-size: cover; background-position: center;">
+  <h1 class="w3-xxxlarge">SmarterChild</h1>
+</header>
+
+<div class="w3-container" style="padding: 20px 32px 32px; ">
+  <hr>
+  <h1><strong>INTRODUCTION</strong></h1>
+  <h4><p><strong>SmarterChild</strong> was an intelligent agent or "bot" developed by ActiveBuddy, Inc., with offices in New York and Sunnyvale. It was widely distributed across global instant messaging networks. SmarterChild became very popular, attracting over 30 million Instant Messenger "buddies" on AIM (AOL) and MSN and Yahoo Messenger over the course of its lifetime.</p></h4>
+  <div class="w3-container w3-sand w3-leftbar">
+    <h4><p>"The idea was this is the wild viral new way of getting information on the internet," said Pat Guiney, who wrote SmarterChild&acute;s responses. "We were going to transform the way that people interact with technology and with the internet."</p></h4>
+    <h4><p>Mr. Guiney loved his job. "It was very entertaining to see what people were saying and see if I could create something more interesting and more compelling, keeping in mind that in the end it is this ultimately pointless thing, he said.</p></h4>
+
+    <div style="display: flex;">
+      <img src="smarterchild.gif" style="height: auto; width: 300px;">
+      <div style="display: flex; flex-direction: column;">
+        <img src="swing.gif" style="height: 100px; width: auto;margin-left: 10px;">
+        <img src="lawnmower.gif" style="height: 100px; width: auto;margin-left: 10px;">
+        <img src="tireswing.gif" style="height: 100px;width: auto;margin-left: 10px;">
+      </div>
+      <img src="home1.gif" style="height: auto; width: 300px; margin-left: 10px;">
+    </div>
+  </div>
+  <br>
+  <br>
+  <hr>
+  <div class="w3-container w3-padding-16 w3-card" style="background-color:#eee; margin-right: 200px;">
+    <h3><strong>Watch a Fun Video abou people Chatting with SmarterChild in 2008!</strong></h3>
+    <iframe width="684" height="513" src="https://www.youtube.com/embed/dFWym2MtfMM" title="Smarter Child argument on MSN" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </div>
+
+</div>
+</div>
+</body>
+<br>
+
+
+<footer class="w3-container w3-theme w3-footer" style="padding:32px">
+</footer>
+     
+
+    <script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+// Accordions
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme", "");
+  }
+}
+
+
+</script>
+     
+</body>
+</html> 
+

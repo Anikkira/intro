@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>From Eliza to ChatGPT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="color.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><style>
+body {font-family: "Roboto", sans-serif}
+.w3-bar-block .w3-bar-item {
+  padding: 16px;
+  font-weight: bold;
+}
+</style>
+<body>
+
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-animate-left w3-card w3-theme" style="z-index:3;width:250px;" id="mySidebar">
+  <a class="w3-bar-item w3-button w3-hide-large w3-large" href="javascript:void(0)" onclick="w3_close()">Close <i class="fa fa-remove"></i></a>
+  <a class="w3-bar-item w3-button" href="group.html">Home</a>
+  <a class="w3-bar-item w3-button" href="Eliza.html">ELiza</a>
+  <a class="w3-bar-item w3-button w3-theme-light" href="PARRY.html">PARRY</a>
+  <a class="w3-bar-item w3-button" href="alice.html">A.L.I.C.E.</a>
+  <a class="w3-bar-item w3-button" href="smarter.html">SmarterChild</a>
+  <a class="w3-bar-item w3-button" href="siri.html">Siri</a>
+  <a class="w3-bar-item w3-button" href="google.html">Google Assistant</a>
+  <a class="w3-bar-item w3-button" href="chatgpt.html">ChatGPT</a>
+ 
+  </div>
+</nav>
+
+
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" id="myOverlay"></div>
+
+<div class="w3-main" style="margin-left:250px;">
+
+  <div id="myTop" class="w3-container w3-top w3-theme w3-large container" style="background-size: cover;">
+    <p><i class="fa fa-bars w3-button w3-teal w3-hide-large w3-xlarge" onclick="w3_open()"></i>
+    <span id="myIntro" class="w3-hide">PARRY</span></p>
+  </div>
+  
+  <header class="w3-container w3-theme container" style="padding:64px 32px; background-image: url('back1.jpg'); background-size: cover; background-position: center;">
+  <h1 class="w3-xxxlarge">PARRY</h1>
+</header>
+
+
+<div class="w3-container" style="padding: 20px 32px 32px;">
+    <hr>
+    <h1><strong>INTRODUCTION</strong></h1>
+    <h4><p><strong>PARRY</strong> was written in 1972 by psychiatrist Kenneth Colby, then at Stanford University. While ELIZA was a tongue-in-cheek[citation needed] simulation of a Rogerian therapist, PARRY attempted to simulate a person with paranoid schizophrenia.[1] The program implemented a crude model of the behavior of a person with paranoid schizophrenia based on concepts, conceptualizations, and beliefs (judgements about conceptualizations: accept, reject, neutral). It also embodied a conversational strategy, and as such was a much more serious and advanced program than ELIZA. It was described as "ELIZA with attitude".
+
+       <br>
+       <div class="w3-container w3-sand w3-leftbar">
+       <p>PARRY was tested in the early 1970s using a variation of the Turing Test. A group of experienced psychiatrists analysed a combination of real patients and computers running PARRY through teleprinters. Another group of 33 psychiatrists were shown transcripts of the conversations. The two groups were then asked to identify which of the "patients" were human and which were computer programs. The psychiatrists were able to make the correct identification only 48 percent of the time, a figure consistent with random guessing.</p></h4>
+        <hr>
+       <h3><strong>PARRY and ELIZA (also known as "the Doctor") interacted several times. </strong></h3><h4><p> The most famous of these exchanges occurred at the ICCC 1972, where PARRY and ELIZA were hooked up over ARPANET and responded to each other.</p></h4>
+       <div class="w3-container w3-padding-16 w3-card" style="background-color:#eee">
+       <p>Click <a href="https://web.archive.org/web/20080613072047/http://www.nettime.org/Lists-Archives/nettime-l-9707/msg00059.html" style="color:blue ">here</a> to discover the transcript of the 1972 document shows programs DOCTOR (an eliza-type program) at Bolt Beranek and Newman and PARRY at Stanford Artificial Intelligence Laboratory.</p>
+       <p>Click <a href="https://datatracker.ietf.org/doc/html/rfc439" style="color: blue">here </a>to discover the transcript of a session between Parry and Eliza. (This is not the dialogue from the ICCC, which took place October, 1972, whereas this session is from September 18, 1972.)</p>
+      </div>
+
+    
+</div>
+</div>
+</body>
+
+<footer class="w3-container w3-theme w3-footer" style="padding:32px">
+</footer>
+     
+
+
+     
+</div>
+
+
+
+<script>
+// Open and close the sidebar on medium and small screens
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Change style of top container on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("myTop").classList.add("w3-card-4", "w3-animate-opacity");
+    document.getElementById("myIntro").classList.add("w3-show-inline-block");
+  } else {
+    document.getElementById("myIntro").classList.remove("w3-show-inline-block");
+    document.getElementById("myTop").classList.remove("w3-card-4", "w3-animate-opacity");
+  }
+}
+
+// Accordions
+function myAccordion(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className += " w3-theme";
+  } else { 
+    x.className = x.className.replace("w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace(" w3-theme", "");
+  }
+}
+
+
+</script>
+     
+</body>
+</html> 
+
